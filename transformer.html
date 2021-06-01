@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .box{
+            border: 1px solid rebeccapurple;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+        }
+
+        .outer{
+            border: 1px solid royalblue;
+            height: 100px;
+            width: 100px;
+            background-color: powderblue;
+        }
+
+        .inner{
+            border: 1px solid peru;
+            height: 100px;
+            width: 100px;
+            background-color: seagreen;
+            transform: translate(100px);
+            transform: rotate(30deg) scale(0.75);
+        }
+    </style>
+</head>
+<body>
+    <h1>Transform</h1>
+    <div class="box outer">
+        <div class="box inner">box-1</div>
+    </div>
+    <div class="box outer">
+        <div class="box inner">box-2</div>
+    </div>
+    <div class="box outer">
+        <div class="box inner">box-3</div>
+    </div>
+</body>
+</html>
